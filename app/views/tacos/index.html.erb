@@ -1,5 +1,5 @@
 <% 
-fillings = ["Avocado", "Chicken", "Pescado", "Shrimp"]
+fillings = ["Mushroom", "Chicken", "Pescado", "Shrimp"]
 %>
 
 
@@ -13,9 +13,18 @@ fillings = ["Avocado", "Chicken", "Pescado", "Shrimp"]
 
 
 <ul>
+  <% for filling in fillings %>
+   <li><%= filling %></li>
+   <% end %>
+
+
+
+<!--html comment syntax that is shown
 <li><%= fillings[0] %></li>
 <li>Chicken</li>
 <li>Pescado</li>
 <li>Shrimp</li>
+to not show add the # key to the part that you want to comment out
+-->
 
 </ul>
